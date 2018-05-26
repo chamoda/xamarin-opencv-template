@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BC6CB908-941D-40FB-A61C-1AFC3EDC07AB}</ProjectGuid>
+    <ProjectGuid>{2A318B45-544F-4191-A647-2C9F211BD82D}</ProjectGuid>
     <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>OpenCVBinding</RootNamespace>
-    <AssemblyName>OpenCVBinding</AssemblyName>
+    <RootNamespace>XamarinOpenCV.Bindings</RootNamespace>
+    <AssemblyName>XamarinOpenCV.Bindings</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -44,8 +44,9 @@
   <ItemGroup>
     <NativeReference Include="..\OpenCV\opencv2.framework">
       <Kind>Framework</Kind>
-      <SmartLink>False</SmartLink>
       <Frameworks>Accelerate AssetsLibrary AVFoundation CoreGraphics CoreImage CoreMedia CoreVideo QuartzCore UIKit Foundation</Frameworks>
+      <SmartLink>False</SmartLink>
+      <IsCxx>True</IsCxx>
     </NativeReference>
     <NativeReference Include="..\OpenCV\libOpenCVUniserval.a">
       <Kind>Static</Kind>

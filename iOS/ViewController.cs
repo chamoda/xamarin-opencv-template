@@ -4,7 +4,7 @@ using UIKit;
 
 using XamarinOpenCV;
 
-
+using XamarinOpenCV.Bindings;
 
 namespace XamarinOpenCV.iOS
 {
@@ -12,7 +12,7 @@ namespace XamarinOpenCV.iOS
     {
         int count = 1;
 
-        //private OpenCV OpenCV = new OpenCV();
+        private OpenCV OpenCV = new OpenCV();
 
         public ViewController(IntPtr handle) : base(handle)
         {
@@ -30,9 +30,7 @@ namespace XamarinOpenCV.iOS
                 Button.SetTitle(title, UIControlState.Normal);
             };
 
-            //var x = new OpenCV();
-
-
+            Console.WriteLine(OpenCV.Version());
 
         }
 

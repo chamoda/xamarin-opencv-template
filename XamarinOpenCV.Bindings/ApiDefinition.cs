@@ -5,7 +5,7 @@ using Foundation;
 using ObjCRuntime;
 using CoreGraphics;
 
-namespace OpenCVBinding
+namespace XamarinOpenCV.Bindings
 {
     // The first step to creating a binding is to add your native library ("libNativeLibrary.a")
     // to the project by right-clicking (or Control-clicking) the folder containing this source
@@ -68,7 +68,7 @@ namespace OpenCVBinding
     interface OpenCV
     {
 
-        [Export("version:")]
+        [Export("version")]
         NSString Version();
 
     }
